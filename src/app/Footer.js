@@ -1,28 +1,36 @@
+// Import necessary dependencies
 import Link from "next/link";
 import React from "react";
 
+// Define the Footer component
 function Footer() {
   return (
-    <footer class="text-gray-600 body-font fixed bottom-0 w-full ">
-      <div class="bg-teal-50">
-        <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
-          <a  href="https://www.linkedin.com/in/divyanshu-sharma-b75a73221" class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-           
-            <span class="ml-3 text-xl font-serif font-bold text-rose-500">My-Meal</span>
+    // Footer section with styling classes
+    <footer className="text-gray-600 body-font fixed bottom-0 w-full">
+      <div className="bg-teal-50">
+        {/* Container for footer content */}
+        <div className="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+          {/* Logo or site name with a link to LinkedIn profile */}
+          <a href="https://www.linkedin.com/in/divyanshu-sharma-b75a73221" className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <span className="ml-3 text-xl font-serif font-bold text-rose-500">My-Meal</span>
           </a>
-          <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4 ">
-           @ developed by <Link href={"/"} className="font-bold font-serif hover:underline hover:cursor-pointer">Divyanshu Sharam</Link>
+          
+          {/* Information about the developer */}
+          <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
+            @ developed by <Link href={"/"} className="font-bold font-serif hover:underline hover:cursor-pointer">Divyanshu Sharma</Link>
           </p>
-          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start hover:cursor-pointer">
-            
-            <Link  href={"https://www.linkedin.com/in/divyanshu-sharma-b75a73221"} class="ml-3 text-gray-500">
+          
+          {/* Social media link (LinkedIn in this case) */}
+          <span className="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start hover:cursor-pointer">
+            <Link href={"https://www.linkedin.com/in/divyanshu-sharma-b75a73221"} className="ml-3 text-gray-500">
+              {/* LinkedIn icon */}
               <svg
                 fill="currentColor"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="0"
-                class="w-5 h-5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="0"
+                className="w-5 h-5"
                 viewBox="0 0 24 24"
               >
                 <path
@@ -39,4 +47,5 @@ function Footer() {
   );
 }
 
+// Export the Footer component
 export default Footer;
